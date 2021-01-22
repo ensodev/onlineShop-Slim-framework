@@ -1,0 +1,1 @@
+doucument.getElementByClass('qty').value

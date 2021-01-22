@@ -1,0 +1,29 @@
+{% extends 'layouts/app.twig' %}
+
+{% block menu %}
+{% endblock %}
+
+{% block content %}
+    <div class='jumbotron text-center w3-light-blue'>
+        <h2 class='text-danger'>
+            <strong>ArcAngel</strong>
+        </h2>
+
+            <p></p>
+            <img src="/images/5.jpg" style="width:300px; height:300px" class='w3-animate-zoom'>
+            <hr />
+            <br />
+            <a href="{{ path_for('services') }}" class='badge badge-info badge-lg w3-animate-right'>Services</a>
+            <a href="{{ path_for('shop') }}" class='badge badge-info badge-lg w3-animate-right'>Shop</a>
+            <a href="{{ path_for('about') }}" class='badge badge-info badge-lg w3-animate-top'>About us</a>
+            <a href="{{ path_for('contact') }}" class='badge badge-left badge-lg w3-animate-right'>Contact</a>
+            <a href="{{ path_for('blog') }}" class='badge badge-info badge-lg w3-animate-bottom'>Blogs</a>
+        
+    </div>
+{% endblock %}
+
+{# {% block footer %}
+       
+{% endblock %} #}
+ 
+ 

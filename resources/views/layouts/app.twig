@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Arc Angel{% endblock %}</title>
+    {# <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> #}
+    <link rel="stylesheet"  href= "/asset/w3.css">
+    <link rel="stylesheet"  href= "/asset/bootstrap.min.css">
+    <link rel="stylesheet"  href= "/asset/jquery-3.3.1.min.js">
+    <link rel="stylesheet"  href= "/asset/bootstrap.min.js">
+</head>
+<body>
+    <div class='container'>
+
+        {% block menu %}
+        <div class='jumbotron text-left w3-light-blue'>
+            <h3 class='text-danger'>
+                <strong>ArcAngel</strong>
+            </h3>
+            <a href="{{ path_for('home') }}" class='badge badge-info badge-lg w3-animate-right'>Home</a> 
+            <a href="{{ path_for('services') }}" class='badge badge-info badge-lg w3-animate-right'>Services</a>
+            <a href="{{ path_for('shop') }}" class='badge badge-info badge-lg w3-animate-right'>Shop</a>
+            <a href="{{ path_for('about') }}" class='badge badge-info badge-lg w3-animate-top'>About us</a>
+            <a href="{{ path_for('contact') }}" class='badge badge-left badge-lg w3-animate-right'>Contact</a>
+            <a href="{{ path_for('blog') }}" class='badge badge-info badge-lg w3-animate-bottom'>Blogs</a>
+            <p></p>
+            <hr />
+            <!-- <a href='{{ path_for('cart') }}'  class='btn btn-info'><span class="glyphicon glyphicon-shopping-cart text-danger"></span>Cart</a> -->
+            
+            <span class='btn btn-info'>
+            <a  href='{{ path_for('login') }}' class='btn btn-info btn-xs'>Login</a> | 
+            <a  href='{{ path_for('register') }}' class='btn btn-info btn-xs'>Register</a></span>
+        </div>
+        
+        {% endblock %}
+
+        {% block content %}
+         
+        {% endblock %}
+
+        {% block footer %}
+            <div class='w3-black' style='padding:15px'>
+                <div class='row'>
+                    <div class='col-md-6'>
+                        <h3 class='text-danger'>ArcAngel</h3>
+                        <p><small>We believe it is our responsibility to produce the best products, make it available and reachable 
+                        for our clients within a reasonable time lag, our tradition is to treat our customer right and let them 
+                        have a positive and lasting memory of the qualities of our products which are not just beautify but also
+                        elegant.</small></p>
+                       
+                       <a class='btn btn-link' href='{{ path_for('about') }}'><p>About Us</p></a>
+                       
+                    </div> 
+
+                    <div class='col-md-4'>
+                        <h3 class='text-danger'>Customer Help</h3>
+                        <small>
+							<p><a href="{{ path_for('cart') }}">My Cart</a></p>
+                            <p><a>Customer care</a></p>
+                            <p><a>F.A.Q</a></p>
+                            <p><a>Refferal Program</a></p>
+                            <p><a>Delivery and Shipping</a></p>
+                            <p><a>Terms and Conditions</a></p>
+                        </small>
+                    </div>
+
+                    <div class='col-md-2 text-left'>
+                        <h3 class='text-danger'>Socials</h3>
+                        <small>
+                            <p><a>Facebook</a></p>
+                            <p><a>Instagram</a></p>
+                            <p><a>Twitter</a></p>
+                            <p><a></a></p>
+                            <p></p>
+                            <p class='text-success'>&copyCopyright {{ now|date('Y') }}</p>
+                        </small>
+                        
+                    </div>
+                </div> 
+                
+            </div>
+            
+        {% endblock %}
+    </div>
+
+
+<link rel="stylesheet"  href= "/asset/cart.js">
+</body>
+</html>

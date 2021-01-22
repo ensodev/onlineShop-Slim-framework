@@ -1,0 +1,241 @@
+{% extends 'layouts/app.twig' %}
+
+{% block title %} Products {% endblock %}
+
+{% block content %}
+       <div>
+        <div class="row p-2">
+            <div class="col-md-4 text-center">
+                 <img src="/images/{{ id }}.jpg" style="width:90%; height:90%" class="w3-animate-left">
+                 <p></p>
+                 <a href=''><span class='badge w3-gray w3-text-gray'> - </span></a>
+                 <a href=''><span class='badge w3-gray w3-text-gray'> - </span></a>
+                 <a href=''><span class='badge w3-gray w3-text-gray'> - </span></a>
+                 <a href=''><span class='badge w3-gray w3-text-gray'> - </span></a>
+                 <a href=''><span class='badge w3-gray w3-text-gray'> - </span></a>
+                 <a href=''><span class='badge w3-gray w3-text-gray'> - </span></a>
+                 <br>
+                 <h6>Ankara Bag <br><span>N5,500</span> / <span class='text-danger'><s>N7,000</s></span></h6>
+                 <small class='text-danger'>
+                    <b>Product ID:</b><i>#98765</i>
+                </small>
+                 <br />
+                
+            </div>
+
+            <div class="col-md-5">
+                <h5>
+                    <b>Product Desciptions</b>
+                </h5>
+
+                <br />
+                <small>
+                    <br>
+                    <span class='text-danger'>
+                    <b>Product ID:</b><i>#98765</i>
+                    </span>
+                    <br>
+                    This product is make from the best of leather, ArcAngel's products are relaible 
+                    and the durabilities of the company products 
+                </small>
+                <br />
+                
+                <p></p>
+                <div>
+                    <a href="{{ path_for('payment') }}" class='btn btn-info'>Buy Now</a>
+                    <a href="{{ path_for('cart') }}" class='btn btn-info'>Add Cart</a>
+                    <a href="{{ path_for('contact') }}" class='btn btn-info'>Contact</a>
+                </div>
+                <p></p>
+
+                <br />
+                <small>
+                    <br>
+                    <span class='text-danger'>
+                    <b>Delivery Location and Conditions:</b>
+                    </span>
+                    <br>
+                    Product can be made available in every part of the country.
+                    <p></p>
+                    Delivery with in Lagos State is free <del>N</del>1000.
+                    <br />
+                    Delivery with in Ogun state is free <del>N</del>1500.
+                     <br />
+                    Delivery with in Oyo state is free <del>N</del>1500.
+                     <br />
+                    Delivery with in Ekiti state is free <del>N</del>2000.glyphicon
+                     <br />
+                    Delivery with in FCT state is free <del>N</del>2000
+                     <br />
+                    Delivery with in Kwara state is free <del>N</del>2000
+                     <br />
+                    Delivery with in Osun state is free <del>N</del>2000
+                     <br />
+                    Delivery to other state is free <del>N</del>3000
+                </small>
+                <br />
+
+
+            </div>
+            <div class='m-3 text-center'> 
+                    <b>Similar</b>
+                    <p></p>
+            </div>
+            <div class="col-md-3 text-center">
+               
+                <div class='row'>
+                    
+                    <div class='col-md-4'>
+                         <a href="/product/3">
+                            <img src="/images/3.jpg" style="width:100%; height:100%" class="w3-animate-bottom">
+                            <small>N5,000</small>
+                            <p></p>
+                         </a>
+
+                    </div>
+                    
+                    <div class='col-md-4'>
+                        <a href="/product/5">
+                            <img src="/images/5.jpg" style="width:100%; height:100%" class="w3-animate-bottom">
+                            <small>N5,000</small>
+                            <p></p>
+                        </a>
+                    </div>
+                    
+                    <div class='col-md-4'>
+                        <a href="/product/7">
+                            <img src="/images/7.jpg" style="width:100%; height:100%" class="w3-animate-bottom">
+                            <small>N5,000</small>
+                            <p></p>
+                        </a>
+                    </div>
+                </div>
+                
+                <p></p>
+
+                <div class='row'>
+                    
+                    <div class='col-md-4'>
+                         <a href="/product/1">
+                            <img src="/images/1.jpg" style="width:100%; height:100%" class="w3-animate-bottom">
+                            <small>N5,000</small>
+                            <p></p>
+                         </a>
+
+                    </div>
+                    
+                    <div class='col-md-4'>
+                        <a href="/product/2">
+                            <img src="/images/2.jpg" style="width:100%; height:100%" class="w3-animate-bottom">
+                            <small>N5,000</small>
+                            <p></p>
+                        </a>
+                    </div>
+                    
+                    <div class='col-md-4'>
+                        <a href="/product/4">
+                            <img src="/images/4.jpg" style="width:100%; height:100%" class="w3-animate-bottom">
+                            <small>N5,000</small>
+                            <p></p>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    {# more other products #}
+        <hr />
+
+        <div class='row text-center bg-danger p-3'>
+           
+            <hr />
+            <div class='col-md-3'>
+                <div class='row text-center'>
+                    {#  #}
+                    <div class='col-xs-6'>
+                        <a href='/product/1'>
+                            <img src="/images/1.jpg" style="width:80%; height:80%" class='w3-animate-left'>
+                            <h6>Leather Bag <br><span>N6,500</span> / <span class='text-danger'><s>N8,000</s></span></h6>
+                        </a>
+                    </div>
+
+                    <div class='col-xs-6'>
+                        <a href='/product/2'>
+                            <img src="/images/2.jpg" style="width:80%; height:80%" class='w3-animate-top'>
+                            <h6>Leather Bag <br><span>N5,500</span> / <span class='text-danger'><s>N7,000</s></span></h6>
+                        </a>
+                    </div>
+                    {#  #}
+                </div>
+            </div>
+
+             <div class='col-md-3'>
+                <div class='row text-center'>
+                    {#  #}
+                    <div class='col-xs-6'>
+                        <a href='/product/3'>
+                            <img src="/images/3.jpg" style="width:80%; height:80%" class='w3-animate-left'>
+                            <h6>Leather Bag <br><span>N6,500</span> / <span class='text-danger'><s>N8,000</s></span></h6>
+                        </a>
+                    </div>
+
+                    <div class='col-xs-6'>
+                        <a href='/product/11'>
+                            <img src="/images/11.jpg" style="width:80%; height:80%" class='w3-animate-top'>
+                            <h6>Leather Bag <br><span>N5,500</span> / <span class='text-danger'><s>N7,000</s></span></h6>
+                        </a>
+                    </div>
+                    {#  #}
+                </div> 
+            </div>
+
+            <div class='col-md-3'>
+                <div class='row text-center'>
+                    {#  #}
+                    <div class='col-xs-6'>
+                        <a href='/product/5'>
+                            <img src="/images/5.jpg" style="width:80%; height:80%" class='w3-animate-left'>
+                            <h6>Leather Bag <br><span>N6,500</span> / <span class='text-danger'><s>N8,000</s></span></h6>
+                        </a>
+                    </div>
+
+                    <div class='col-xs-6'>
+                        <a href='/product/6'>
+                            <img src="/images/6.jpg" style="width:80%; height:80%" class='w3-animate-top'>
+                            <h6>Leather Bag <br><span>N5,500</span> / <span class='text-danger'><s>N7,000</s></span></h6>
+                        </a>
+                    </div>
+                    {#  #}
+                </div>
+                
+            </div>
+
+            <div class='col-md-3'>
+                <div class='row text-center'>
+                    {#  #}
+                    <div class='col-xs-6'>
+                        <a href='/product/7'>
+                            <img src="/images/7.jpg" style="width:80%; height:80%" class='w3-animate-left'>
+                            <h6>Leather Bag <br><span>N6,500</span> / <span class='text-danger'><s>N8,000</s></span></h6>
+                        </a>
+                    </div>
+
+                    <div class='col-xs-6'>
+                        <a href='/product/8'>
+                            <img src="/images/8.jpg" style="width:80%; height:80%" class='w3-animate-top'>
+                            <h6>Leather Bag <br><span>N5,500</span> / <span class='text-danger'><s>N7,000</s></span></h6>
+                        </a>
+                    </div>
+                    {#  #}
+                </div>
+                
+            </div>
+            
+           
+        </div>
+                         
+        <hr />
+    <hr />
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends 'layouts/app.twig' %}
+{% block title %} Contact Page {% endblock %}
+
+{% block content %}
+    <h4 class='text-danger'><strong>Contact</strong></h4>
+    <hr />
+
+    <div class='row'>
+        
+        <div class='col-md-6'>
+            <div>
+                <form>
+                    
+                    <div>
+                    <input type="text" id='fullname' name='fullname' placeholder='Fullname' class='form-control'>
+                    </div>
+                    <br />
+                    <div>
+                    <input type="email"  id='email' name='email' placeholder='email' class='form-control'>
+                    </div>
+                    <br />
+                    <div>
+                    <textarea  id='message' name='message' placeholder='Message' style='height:250px' class='form-control'></textarea>
+                    </div>
+                     <br />
+                    <div>
+                    <input type="submit" value='Submit' class='form-control w3-light-blue'>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class='col-md-1'>
+                 
+        </div> 
+
+        <div class='col-md-4 w3-light-gray text-left' style='padding:20px; margin:10px'>
+            <h4 class='text-info '>Address:</h4>
+            <h6><b>Lagos Office</b><br><small>Street 2, Office 12, Banana Estate, Lagos, Nigeria</small></h6>
+            <h6><b>Ibadan Office</b><br><small>Street 2, Office 12, Banana Estate, Lagos, Nigeria</small></h6>
+            <h6><b>Abuja Office</b><br><small>Street 2, Office 12, Banana Estate, Lagos, Nigeria</small></h6>
+                  
+       
+      
+            <hr />
+
+            <h4 class='text-info '>Tel:</h4>
+            <p>08022963985<br />08022963985<br />08022963985<br /></p>
+            
+            <hr />
+            
+            <h4 class='text-info'>Email:</h4>
+            <p>arcagel@gmail.com<br />arcagel@gmail.com<br />arcagel@gmail.com<br /></p>
+        </div> 
+
+    </div>
+
+    <hr />
+{% endblock %}

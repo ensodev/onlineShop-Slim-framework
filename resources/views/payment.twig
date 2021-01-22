@@ -1,0 +1,172 @@
+{% extends 'layouts/app.twig' %}
+
+{% block title %} Payments {% endblock %}
+
+{% block content %}
+    
+    <h4 class='text-danger'><strong>Cart</strong></h4>
+    <hr />
+        <div>
+            <table class='table'>
+                <tr>
+                    <th>
+                        Total Item
+                    </th>
+
+                    <th>
+                        Total Amount (<del>N</del>)
+                    </th>
+
+                    <th>
+                        Payments Method
+                    </th>
+                <tr>
+                <tr>
+                    <td>
+                        <img src='images/1.jpg' style='height:100px'>
+                    </td>
+
+                    <td>
+                        5,000
+                    </td>
+
+                    <td>
+                    <form>
+                        <input type='text' name='totalamount' value='{{ totalAmount }}' hidden>
+                        <br />
+                        <input type='text' name='Email' id='Email' placeholder='Email' class='form-control'>
+                        <br />
+                        <input type='text' name='Phone' id='Phone'placeholder='Mobile' class='form-control'>
+                        <br />
+                         <input type='text' name='fullname' id='fullname' placeholder='Fullname' class='form-control'>
+                        <br />
+                        <input type='text' name='card' id='cardnumber' placeholder='card number' class='form-control'>
+                        <br />
+                        <input type='text' name='quantity' id='quantity' placeholder='Product Quantity' class='form-control'>
+                        <br />
+                        <input type='text' name='color' id='color' placeholder='Prefered Color' class='form-control'>
+                        <br />
+                        <label><small>Delivery Location</small></label>
+                        <br />
+                        <select name='location' class='form-control'>
+                            <option value='lagos'>Lagos <del>N</del>1,000</option>
+                            <option value='ogun'>Ogun <del>N</del>1,500</option>
+                            <option value='oyo'>Oyo <del>N</del>1,500</option>
+                            <option value='osun'>osun <del>N</del>2000</option>
+                            <option value='kwara'>Kwara <del>N</del>2000</option>
+                            <option value='ekiti'>Ekiti <del>N</del>2000</option>
+                            <option value='abuja'>Abuja <del>N</del>2000</option>
+                            <option value='others'>Others <del>N</del>3000</option>
+                        </select>
+                        <br />
+                        <select name='card form-control'>    
+                            <option value='mastercard'>Master Card</option>
+                            <option value='visacard'>Visa Card</option>
+                            <option value='vervecard'>Verve Card</option>
+                            <option value='Banktransfer'>Bank Transfer</option>
+                            <option value='payondelivery'>Pay on Delivery</option>
+
+                        </select>
+                        <p></p>
+                        <input type='submit' id='pay' name='pay' value='Pay' class='btn btn-warning btn-small'>
+                    </form>
+                    </td>
+                <tr>
+            </table>
+        </div>
+    <hr />
+    
+    <div class='row text-center bg-danger p-3'>
+           
+            <hr />
+            <div class='col-md-3'>
+                <div class='row text-center'>
+                    {#  #}
+                    <div class='col-xs-6'>
+                        <a href='/product/1'>
+                            <img src="/images/1.jpg" style="width:80%; height:80%" class='w3-animate-left'>
+                            <h6>Leather Bag <br><span>N6,500</span> / <span class='text-danger'><s>N8,000</s></span></h6>
+                        </a>
+                    </div>
+
+                    <div class='col-xs-6'>
+                        <a href='/product/2'>
+                            <img src="/images/2.jpg" style="width:80%; height:80%" class='w3-animate-top'>
+                            <h6>Leather Bag <br><span>N5,500</span> / <span class='text-danger'><s>N7,000</s></span></h6>
+                        </a>
+                    </div>
+                    {#  #}
+                </div>
+            </div>
+
+             <div class='col-md-3'>
+                <div class='row text-center'>
+                    {#  #}
+                    <div class='col-xs-6'>
+                        <a href='/product/3'>
+                            <img src="/images/3.jpg" style="width:80%; height:80%" class='w3-animate-left'>
+                            <h6>Leather Bag <br><span>N6,500</span> / <span class='text-danger'><s>N8,000</s></span></h6>
+                        </a>
+                    </div>
+
+                    <div class='col-xs-6'>
+                        <a href='/product/5'>
+                            <img src="/images/5.jpg" style="width:80%; height:80%" class='w3-animate-top'>
+                            <h6>Leather Bag <br><span>N5,500</span> / <span class='text-danger'><s>N7,000</s></span></h6>
+                        </a>
+                    </div>
+                    {#  #}
+                </div> 
+            </div>
+
+            <div class='col-md-3'>
+                <div class='row text-center'>
+                    {#  #}
+                    <div class='col-xs-6'>
+                        <a href='/product/6'>
+                            <img src="/images/6.jpg" style="width:80%; height:80%" class='w3-animate-left'>
+                            <h6>Leather Bag <br><span>N6,500</span> / <span class='text-danger'><s>N8,000</s></span></h6>
+                        </a>
+                    </div>
+
+                    <div class='col-xs-6'>
+                        <a href='/product/7'>
+                            <img src="/images/7.jpg" style="width:80%; height:80%" class='w3-animate-top'>
+                            <h6>Leather Bag <br><span>N5,500</span> / <span class='text-danger'><s>N7,000</s></span></h6>
+                        </a>
+                    </div>
+                    {#  #}
+                </div>
+                
+            </div>
+
+            <div class='col-md-3'>
+                <div class='row text-center'>
+                    {#  #}
+                    <div class='col-xs-6'>
+                        <a href='/product/8'>
+                            <img src="/images/8.jpg" style="width:80%; height:80%" class='w3-animate-left'>
+                            <h6>Leather Bag <br><span>N6,500</span> / <span class='text-danger'><s>N8,000</s></span></h6>
+                        </a>
+                    </div>
+
+                    <div class='col-xs-6'>
+                        <a href='/product/9'>
+                            <img src="/images/9.jpg" style="width:80%; height:80%" class='w3-animate-top'>
+                            <h6>Leather Bag <br><span>N5,500</span> / <span class='text-danger'><s>N7,000</s></span></h6>
+                        </a>
+                    </div>
+                    {#  #}
+                </div>
+                
+            </div>
+            
+           
+        </div>
+
+    <hr />
+
+    
+
+    
+{% endblock %}

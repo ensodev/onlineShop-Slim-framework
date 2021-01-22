@@ -1,0 +1,58 @@
+dashboard
+..............
+SITE SETTINGS
+................
+site name
+site starting page
+social medial links
+site email
+delevery and shipping
+Terms and conditions
+about us
+....the ownner
+....shop or company activities
+....achievement of the company
+
+
+SITE SHOP PROCESSOR
+....................
+1. Add product categories
+2. Edit Product
+3. Add products
+4. Remove products
+
+
+SITE WITH LOGIN SYSTEM
+........................
+1. will not ask for login until BUY NOW , Add Cart and Favorite is click
+2. can click login or register at will also
+2. login system
+3. Registration system
+4. Cart system
+5. payment history system
+6. product purchase history
+
+
+SITE WITH LOGIN SYSTEM
+........................
+1. session is kept with timestamp
+2. timestamp cart is opened
+
+SITE STATISTIC
+.................................
+1. daily visitor is kept
+2. daily registration is kept
+3. daily login is kept
+4. daily purchase is kept
+5. daily products bought is kept
+6. daily male login and daily female login
+7. daily male product few
+7. daily female product few
+
+
+
+
+
+
+
+
